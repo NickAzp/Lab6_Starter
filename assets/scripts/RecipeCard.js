@@ -14,7 +14,7 @@ class RecipeCard extends HTMLElement {
     // A3. TODO - Create a style element - This will hold all of the styles for the Web Component
     this.styleElement = document.createElement('style');
     // A4. TODO - Insert all of the styles from cardTemplate.html into the <style> element you just made
-    fetch('../../reference/cardTemplate.html')
+    fetch('reference/cardTemplate.html')
       .then(response => response.text())
       .then(data => {
         this.styleElement.textContent = data;
